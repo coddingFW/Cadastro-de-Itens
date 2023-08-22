@@ -5,7 +5,7 @@ lista_tipos=["Galão","Caixa","Saco","Unidade"]
 lista_codigos=[]
 janela = tk.Tk()
 
-#Criação da função
+#Criação da função.
 def inserir_codigo():
     descricao = entry_descricao.get()
     tipo = combobox_selecionar_tipo.get()
@@ -16,10 +16,12 @@ def inserir_codigo():
     codigo_str = "cod-{}".format(codigo)
     lista_codigos.append((codigo_str,descricao,tipo,quantidade,data_criacao))
 
-#título da janela
+#título da janela.
 
 janela.title('Ferramenta de cadastro de materias')
 
+
+#Editando os campos e seus repectivos tamanhos.
 label_descricao = tk.Label(text='Descrição do material')
 label_descricao.grid(row=1, column=0,padx=10,pady=10,sticky='nswe',columnspan=4)
 
